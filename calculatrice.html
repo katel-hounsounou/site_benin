@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="calc-body" name="calc">
+            <div class="calc-screen" >
+                <div  class="calc-typed" id="screen">0</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button c" onclick="vide()">C</div>
+                <div class="button l"  onclick="getValue('≠')">≠</div>
+                <div class="button l" onclick="getValue('%')">%</div>
+                <div class="button l" id="Btndiv" onclick="getValue('/')">/</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button"  id="Btn7" onclick="getValue(7)">7</div>
+                <div class="button"  id="Btn8" onclick="getValue(8)">8</div>
+                <div class="button"  id="Btn9" onclick="getValue(9)">9</div>
+                <div class="button l" id="Btnfois" onclick="getValue('x')">x</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button"  id="Btn4" onclick="getValue(4)">4</div>
+                <div class="button"  id="Btn5" onclick="getValue(5)">5</div>
+                <div class="button"  id="Btn6" onclick="getValue(6)">6</div>
+                <div class="button l" id="Btnmoins" onclick="getValue('-')">−</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" id="Btn1" onclick="getValue(1)">1</div>
+                <div class="button"  id="Btn2" onclick="getValue(2)">2</div>
+                <div class="button"  id="Btn3" onclick="getValue(3)">3</div>
+                <div class="button l" id="Btnplus" onclick="getValue('+')">+</div>
+            </div>
+            <div class="calc-button-row">
+                <div class="button" onclick="getValue('.')">.</div>
+                <div class="button" id="Btn0" onclick="getValue(0)">0</div>
+                <div class="button">
+                </div>
+                <div class="button l" onclick="calculer()">=</div>
+            </div>
+        </div>
+    </div>
+    <script src="math.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
